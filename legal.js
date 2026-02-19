@@ -21,10 +21,13 @@
   function showLegalContent(lang) {
     var contents = document.querySelectorAll('.legal-content');
     contents.forEach(function (el) {
-      if (el.getAttribute('data-lang') === lang) {
+      var contentLang = el.getAttribute('data-lang');
+      if (contentLang === lang) {
         el.removeAttribute('hidden');
+        el.style.display = '';
       } else {
         el.setAttribute('hidden', '');
+        el.style.display = 'none';
       }
     });
     document.documentElement.setAttribute('lang', lang);

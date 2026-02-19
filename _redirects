@@ -1,0 +1,8 @@
+# Redirecciones Netlify — dominio: bliim.net
+
+# Redirigir la URL de Netlify a bliim.net
+https://dulcet-queijadas-9b14ea.netlify.app/*  https://bliim.net/:splat  301!
+
+# Forzar HTTP a HTTPS (recomendado: activar en Netlify Domain management)
+# http://bliim.net/*  https://bliim.net/:splat  301!
+# http://www.bliim.net/*  https://www.bliim.net/:splat  301!
