@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bliim — Empresa de desarrollo con servicios al cliente y servicios administrativos. Soluciones digitales y gestión profesional.">
+  <title>Bliim — Desarrollo & Servicios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo-bliim.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="#" class="header__logo" aria-label="Bliim inicio">
+        <img src="assets/logo-bliim.png" alt="Bliim" class="header__logo-img" width="375" height="100">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#servicios" class="nav__link" data-i18n="nav.services">Servicios</a></li>
+          <li><a href="#nosotros" class="nav__link" data-i18n="nav.about">Nosotros</a></li>
+          <li><a href="#contacto" class="nav__link" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-selector">
+          <button class="lang-selector__btn" aria-label="Seleccionar idioma" aria-expanded="false">
+            <span class="lang-selector__current" data-i18n="lang.current">ES</span>
+            <span class="lang-selector__icon" aria-hidden="true">▼</span>
+          </button>
+          <ul class="lang-selector__dropdown" aria-hidden="true">
+            <li><button class="lang-selector__option" data-lang="es">ES</button></li>
+            <li><button class="lang-selector__option" data-lang="en">EN</button></li>
+          </ul>
+        </div>
+        <button class="header__menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <span class="header__menu-icon"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav nav--mobile" aria-hidden="true">
+      <ul class="nav__list nav__list--mobile">
+        <li><a href="#servicios" class="nav__link" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#nosotros" class="nav__link" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="#contacto" class="nav__link" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__inner container">
+        <h1 class="hero__title" data-i18n="hero.title">Desarrollo que impulsa tu negocio</h1>
+        <p class="hero__lead" data-i18n="hero.lead">Bliim es una empresa de desarrollo con servicios al cliente y servicios administrativos. Construimos soluciones digitales y gestionamos la operación para que te enfoques en crecer.</p>
+        <a href="#servicios" class="btn btn--primary" data-i18n="hero.cta">Ver servicios</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="section section--services">
+      <div class="container">
+        <h2 class="section__title" data-i18n="services.title">Nuestros servicios</h2>
+        <p class="section__intro" data-i18n="services.intro">Combinamos desarrollo de software con atención al cliente y soporte administrativo para ofrecer una propuesta integral.</p>
+        <div class="services-grid">
+          <article class="card card--dark">
+            <div class="card__icon" aria-hidden="true">◆</div>
+            <h3 class="card__title" data-i18n="services.client.title">Servicios al cliente</h3>
+            <p class="card__text" data-i18n="services.client.text">Atención, soporte y experiencia de usuario. Gestionamos la relación con tus clientes para que tu producto o servicio brille.</p>
+          </article>
+          <article class="card card--dark">
+            <div class="card__icon" aria-hidden="true">◇</div>
+            <h3 class="card__title" data-i18n="services.admin.title">Servicios administrativos</h3>
+            <p class="card__text" data-i18n="services.admin.text">Gestión operativa, procesos y administración. Te acompañamos en la parte que no se ve pero que hace que todo funcione.</p>
+          </article>
+          <article class="card card--dark">
+            <div class="card__icon" aria-hidden="true">○</div>
+            <h3 class="card__title" data-i18n="services.dev.title">Desarrollo</h3>
+            <p class="card__text" data-i18n="services.dev.text">Software a medida, aplicaciones web y móviles. Desarrollamos la tecnología que tu negocio necesita hoy y mañana.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section section--about">
+      <div class="container">
+        <h2 class="section__title" data-i18n="about.title">Sobre Bliim</h2>
+        <div class="about-content">
+          <p class="about__text" data-i18n="about.text">Somos un equipo especializado en desarrollo y en la operación que acompaña a las empresas. Unimos tecnología, servicio al cliente y administración en una sola propuesta para que puedas escalar con tranquilidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section--cta">
+      <div class="container">
+        <h2 class="section__title" data-i18n="cta.title">¿Hablamos?</h2>
+        <p class="section__intro" data-i18n="cta.intro">Cuéntanos tu proyecto y te proponemos la mejor forma de trabajar juntos.</p>
+        <a href="mailto:hola@bliim.team" class="btn btn--outline">hola@bliim.team</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo-bliim.png" alt="Bliim" class="footer__logo-img" width="413" height="110">
+          <p class="footer__tagline" data-i18n="footer.tagline">Desarrollo · Servicios al cliente · Servicios administrativos</p>
+        </div>
+        <div class="footer__block">
+          <h4 class="footer__heading" data-i18n="footer.company">Empresa</h4>
+          <ul class="footer__list">
+            <li><a href="#servicios" class="footer__link" data-i18n="nav.services">Servicios</a></li>
+            <li><a href="#nosotros" class="footer__link" data-i18n="nav.about">Nosotros</a></li>
+            <li><a href="#contacto" class="footer__link" data-i18n="nav.contact">Contacto</a></li>
+            <li><a href="terminos-condiciones.html" class="footer__link">Términos y condiciones</a></li>
+            <li><a href="politica-privacidad.html" class="footer__link">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h4 class="footer__heading" data-i18n="footer.info">Información</h4>
+          <ul class="footer__list">
+            <li><span class="footer__text">Bliim Global hq LLC · ID 405830025</span></li>
+            <li><span class="footer__text">Zakaria Paliashvili St., N41, Ent. 1, Bajo.</span></li>
+            <li><a href="tel:+995500703849" class="footer__link">+995 500 703 849</a></li>
+            <li><a href="mailto:hola@bliim.team" class="footer__link">hola@bliim.team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="year"></span> Bliim. <span data-i18n="footer.copyright">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
